@@ -31,6 +31,8 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time is up");
                 TimerLeft = 0;
                 TimerOn = false;
+
+
             }
         }
     }
