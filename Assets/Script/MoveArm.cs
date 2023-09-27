@@ -7,7 +7,7 @@ public class MoveArm : MonoBehaviour
     public Rigidbody2D myBody;
     SoundManager mySoundManager;
 
-    float armPower = 200f;
+    float power = 200f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class MoveArm : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A))
         {
             mySoundManager.myAudioSource.PlayOneShot(mySoundManager.armSound);
-            myBody.AddForce(transform.up * armPower, ForceMode2D.Impulse);
+            myBody.AddForce(transform.up * power, ForceMode2D.Impulse);
         }
     }
 }
