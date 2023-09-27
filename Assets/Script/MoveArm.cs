@@ -6,7 +6,7 @@ public class MoveArm : MonoBehaviour
 {
     Rigidbody2D myBody;
 
-    float armPower = .5f;
+    float armPower = 5f;
 
     Vector3 leftArmMove = new Vector3(-1, 0, 0);
 
