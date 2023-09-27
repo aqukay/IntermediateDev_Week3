@@ -20,8 +20,6 @@ public class camera_follow : MonoBehaviour
     void LateUpdate()
     {
         //clamp camera
-
-
         Vector3 desired_position = target.position + offset;
         //find bounds
         Vector3 camera_bounds = new Vector3(

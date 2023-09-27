@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveArm : MonoBehaviour
+public class MoveLegRight : MonoBehaviour
 {
     Rigidbody2D myBody;
 
-    float armPower = .5f;
+    float legPower = 10f;
 
-    Vector3 leftArmMove = new Vector3(-1, 0, 0);
+    Vector3 rightLegMove = new Vector3(-1, 0, 0);
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,10 @@ public class MoveArm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if i press the A key
-        if (Input.GetKeyDown(KeyCode.A))
+        //if i press the S key
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            myBody.AddForce(leftArmMove * armPower, ForceMode2D.Impulse);
+            myBody.AddForce(rightLegMove * legPower, ForceMode2D.Impulse);
         }
     }
 }
