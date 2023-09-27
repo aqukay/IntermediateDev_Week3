@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
                 TimerLeft -= Time.deltaTime;
                 updateTimer(TimerLeft);
             }
-            else
+            else 
             {
                 Debug.Log("Time is up");
                 TimerLeft = 0;
